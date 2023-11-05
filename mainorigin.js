@@ -21,6 +21,9 @@ app.get('/init',
           }).catch((err) =＞ { res.send(err); }) 
           }
        ); 
+// http://localhost:3000/dairyfarm?params=food 记录奶牛喂食物
+// http://localhost:3000/dairyfarm?params=takeashower 记录奶牛洗澡
+// http://localhost:3000/dairyfarm?params=takeawalk。记录奶牛散步
 // 奶牛场的相关操作 
 app.get('/dairyfarm', 
         function (req, res) { 
@@ -32,7 +35,9 @@ app.get('/dairyfarm',
             } 
           }).catch((err) =＞ { res.send(err); }) 
         }
-       ); 
+       );
+// http://localhost:3000/machinging?params=pasterisation 纪律加工厂消毒
+// http://localhost:3000/machinging?params=canned 记录加罐装
 // 加工车间的操作 
 app.get('/machining', 
         function (req, res) { 
@@ -45,6 +50,10 @@ app.get('/machining',
           }).catch((err) =＞ { res.send(err); }) 
         }
        );
+// http://localhost:3000/salesterminal?params=factory_time 记录出厂时间
+// http://localhost:3000/salesterminal?params=distributton_time  记录发货时间
+// http://localhost:3000/salesterminal?params=quality_guarantee_period_2021-10-09 记录有效期
+
 // 销售终端的操作 
 app.get('/salesterminal', 
         function (req, res) { 
@@ -56,6 +65,7 @@ app.get('/salesterminal',
             } }).catch((err) =＞ { res.send(err); }) 
         }
        ); 
+// http://localhost:3000/getmilhistory
 // 客户端查询牛奶的历史 
 app.get('/getmilhistory', 
         function (req, res) { 
