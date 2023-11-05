@@ -36,7 +36,7 @@ app.get('/dairyfarm',
           }).catch((err) =＞ { res.send(err); }) 
         }
        );
-// http://localhost:3000/machinging?params=pasterisation 纪律加工厂消毒
+// http://localhost:3000/machinging?params=pasterisation 记录加工厂消毒
 // http://localhost:3000/machinging?params=canned 记录加罐装
 // 加工车间的操作 
 app.get('/machining', 
